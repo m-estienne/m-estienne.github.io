@@ -157,6 +157,20 @@ hr{
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+
+/*Footer CSS*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerImg{
+    height: 6rem;
+    margin-right: 2rem;
+}
 /*Responsive Design*/
 
 /*Mobile Responsive Design*/
