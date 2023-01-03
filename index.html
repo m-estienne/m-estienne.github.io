@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header><!-- Début du Header -->
+
+        <button class="btnMenu" id="menu"><img src="./assets/img/menu.svg" alt="Menu" class="menuImg"></button>
+        <nav class="navbar hide"><!--Début de la Navbar-->
+            <a href="#" class="navLink">Louer une voiture</a>
+            <a href="#" class="navLink">Louer un utilitaire</a>
+            <a href="#" class="navLink">Réserver un chauffeur</a>
+            <a href="#" class="navLink">Découvrez nos agences</a>
+            <a href="#" class="navLink">Mon Compte</a>
+            <a href="#" class="navLink">Contact</a>
+        </nav><!--Fin de la Navbar-->
+
+        <div class="headerText">
+            <h1 class="headerTitle">Bienvenue à bord</h1>
+            <p class="headerSubtitle">Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        
+            <form method="POST">
+                <div class="formInputs">
+                    <select name="address" id="address">
+                        <option value="Adresse de départ">Adresse de départ</option>
+                    </select>
+                    <input type="date" name="startDate" id="startDate">
+                    <input type="date" name="endDate" id="endDate">
+                </div>
+                <div class="formBtn">
+                    <input type="submit" value="Valider ma recherche" id="submitBtn">
+                </div>
+            </form>     
+    </header><!--Fin du Header-->
+
+    <main><!--Contenu principal-->
+        <div class="filters"><!--Filtres-->
+            <p class="filtersText">7 Résultats</p>
+            <select name="price" id="price">
+                <option value="Prix Croissant">Prix croissant</option>
+            </select>
+        </div><!--Fin des filtres-->
+
+        <div class="car" id="firstCar">
+            <div class="carImg" id="firstCarImg">
+                <img src="./assets/img/arrow_left.svg" class="arrowLeft" id="arrowLeftFirst">
+                <img src="./assets/img/vehicule1.png" alt="" class="carImage" id="firstCarImage">
+                <img src="./assets/img/arrow_right.svg" alt="" class="arrowRight" id="arrowRightFirst">
+            </div>
+            <div class="carDescription" id="firstCarDescription">
+                <h2 class="carName">Peugeot 208</h2>
+                <p class="carDesc"> Diesel, 5 portes, Autoradio, Forfait 1000km (0,5/km supplémentaire).</p>
+                <p class="carPrice">999 € - Agence de Paris</p>
+                <button class="reservationBtn">Réserver et Payer</button>
+            </div>
+        </div>
+        <hr>
+        <div class="car" id="secondCar">
+            <div class="carImg" id="secondCarImg">
+                <img src="./assets/img/arrow_left.svg" class="arrowLeft" id="arrowLeftSecond">
+                <img src="./assets/img/vehicule2.png" alt="" class="carImage" id="secondCarImage">
+                <img src="./assets/img/arrow_right.svg" alt="" class="arrowRight" id="arrowRightSecond">
+
+            </div>
+            <div class="carDescription" id="secondCarDescription">
+                <h2 class="carName">Ford Focus</h2>
+                <p class="carDesc"> Diesel, 5 portes, Autoradio, Forfait 1000km (0,5/km supplémentaire).</p>
+                <p class="carPrice">999 €</p>
+                <button class="reservationBtn">Réserver et Payer</button>
+            </div>
+        </div>
+        <hr>
+        <div class="car" id="thirdCar">
+            <div class="carImg" ithirdCarImg">
+                <img src="./assets/img/arrow_left.svg" class="arrowLeft" id="arrowLeftThird">
+                <img src="./assets/img/vehicule3.png" alt="" class="carImage" id="thirdCarImage">
+                <img src="./assets/img/arrow_right.svg" alt="" class="arrowRight" id="arrowRightThird">
+
+            </div>
+            <div class="carDescription" id="thirdDescription">
+                <h2 class="carName">Audi A1</h2>
+                <p class="carDesc"> Diesel, 5 portes, Autoradio, Forfait 1000km (0,5/km supplémentaire).</p>
+                <p class="carPrice">999 €</p>
+                <button class="reservationBtn">Réserver et Payer</button>
+            </div>
+        </div>
+        <hr>
+        <div class="car" id="fourthCar">
+            <div class="carImg" id="fourthCarImg">
+                <img src="./assets/img/arrow_left.svg" class="arrowLeft" id="arrowLeftFourth">
+                <img src="./assets/img/vehicule4.png" alt="" class="carImage" id="fourthCarImage">
+                <img src="./assets/img/arrow_right.svg" alt="" class="arrowRight" id="arrowFourth">
+
+            </div>
+            <div class="carDescription" id="fourthDescription">
+                <h2 class="carName">Opel Mokka</h2>
+                <p class="carDesc"> Diesel, 5 portes, Autoradio, Forfait 1000km (0,5/km supplémentaire).</p>
+                <p class="carPrice">999 €</p>
+                <button class="reservationBtn">Réserver et Payer</button>
+            </div>
+        </div>
+        <hr>
+    </main><!--Fin du contenu principal-->
+
+    <footer><!--Début du footer-->
+
+    </footer><!--Fin du footer-->
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

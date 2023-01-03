@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Header CSS*/
+header{
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35rem;
+}
+
+.headerTitle{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    
+}
+
+.headerSubtitle{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+form{
+    background-color: #e0e0e1c4;
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+input, select, option{
+    margin: 0.3rem;
+    width: 15rem;
+}
+
+#submitBtn{
+    color: white;
+    background-color: #59b459c0;
+    padding: 0.5rem;
+    border: none;
+    margin: 0;
+}
+
+.btnMenu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: 1px solid #e0e0e1c4;
+    border-radius: 0.5rem;
+}
+
+.menuImg{
+    height: 2rem;
+}
+
+/*Navbar CSS*/
+.navbar{
+    background-color:#f3f3f3;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 4rem;
+}
+
+.navLink{
+    color: black;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+/*Main CSS*/
+main{
+    width: 70rem;
+    margin: auto;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+}
+
+#price{
+    background-color: #e0e0e1c4;
+    border-radius: 0.5em;
+    padding: 0.3rem;
+    width: 8rem;
+    border: 1px solid #e0e0e1ee;
+}
+
+.filtersText{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.car{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carImg{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carDescription{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.carName{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.carDesc, .carPrice{
+    margin-bottom: 0.8rem;
+}
+
+.reservationBtn{
+    color: white;
+    background-color: #409e40;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.7rem;
+    font-weight: bold;
+}
+
+hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/*Responsive Design*/
+
+/*Mobile Responsive Design*/
+@media screen and (max-width: 768px){
+    form{
+        flex-direction: column;
+        width: 99%;
+        align-items: center;
+    }
+
+    header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    input, select, option{
+        width: 95%;
+    }
+
+    #submitBtn{
+        width: 100%;
+    }
+
+    .formInputs{
+        width: 100%;
+    }
+    .formBtn{
+        width: 100%;
+    }
+}
+
+
+/*Tablet Responsive design*/
+@media (min-width: 769px) and (max-width: 900px){
+    header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    form{
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .formInputs{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formBtn{
+        width: 100%;
+    }
+
+    #submitBtn{
+        width: 100%;
+    }
+}
