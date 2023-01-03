@@ -171,10 +171,13 @@ footer{
     height: 6rem;
     margin-right: 2rem;
 }
+
+
 /*Responsive Design*/
 
 /*Mobile Responsive Design*/
 @media screen and (max-width: 768px){
+    /*Header Responsive Design*/
     form{
         flex-direction: column;
         width: 99%;
@@ -200,11 +203,34 @@ footer{
     .formBtn{
         width: 100%;
     }
+
+    /*Main Responsive design*/
+
+    main{
+        width: 100%;
+    }
+
+    .carName, .carDesc, .carPrice{
+        display: none;
+    }
+
+    .carImg{
+        width: 60%;
+    }
+
+    .reservationBtn{
+        align-self: flex-end;
+    }
+
+    .carImage{
+        width: 15rem;
+    }
 }
 
 
 /*Tablet Responsive design*/
 @media (min-width: 769px) and (max-width: 900px){
+    /*Header Responsive Design*/
     header{
         padding-left: 0;
         padding-right: 0;
@@ -226,5 +252,22 @@ footer{
 
     #submitBtn{
         width: 100%;
+    }
+
+    /*Main Responsive Design*/
+    main{
+        width: 90%;
+    }
+
+    .carName, .carDesc, .carPrice{
+        display: none;
+    }
+
+    .carImg{
+        width: 60%;
+    }
+
+    .reservationBtn{
+        align-self: flex-end;
     }
 }
